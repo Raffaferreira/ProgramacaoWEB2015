@@ -1,0 +1,6 @@
+c:\users\aluno\documents\visual studio 2013\Projects\ExerciciosASPNET\bin\ExerciciosASPNET.dll.config
+c:\users\aluno\documents\visual studio 2013\Projects\ExerciciosASPNET\bin\ExerciciosASPNET.dll
+c:\users\aluno\documents\visual studio 2013\Projects\ExerciciosASPNET\bin\ExerciciosASPNET.pdb
+c:\users\aluno\documents\visual studio 2013\Projects\ExerciciosASPNET\obj\Debug\ExerciciosASPNET.dll
+c:\users\aluno\documents\visual studio 2013\Projects\ExerciciosASPNET\obj\Debug\ExerciciosASPNET.pdb
+c:\users\aluno\documents\visual studio 2013\Projects\ExerciciosASPNET\obj\Debug\ExerciciosASPNET.csprojResolveAssemblyReference.cache
