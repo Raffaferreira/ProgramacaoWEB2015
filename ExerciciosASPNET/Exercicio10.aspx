@@ -28,6 +28,7 @@
 					<asp:ListItem>Gabriela</asp:ListItem>
 					<asp:ListItem>Letícia</asp:ListItem>
 				</asp:DropDownList>
+
 				<div id="div-adicionar">
 					<asp:Button ID="BtnAdicionar2" runat="server" Text="Adicionar" OnClick="BtnAdicionar2_Click" />
 				</div>
@@ -43,7 +44,6 @@
 				<div id="lblmensagem">
 					<asp:Label ID="LabelMensagem2" Visible="true" runat="server" CssClass="LabelMsg2"></asp:Label>
 				</div>
-
 			</div>
 		</form>
 	</div>

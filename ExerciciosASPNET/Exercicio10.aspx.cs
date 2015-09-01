@@ -11,6 +11,16 @@ namespace ExerciciosASPNET
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
+			// Ao carregar a página, deve ser false pois se não, todo o momento
+			// que carregar a página (requisição ser feita), irá adicionar estes items a todo Page_Load da página, sempre
+			// adicionando essas quantidades de ListItem.
+			if ( IsPostBack == false )
+			{
+				//ListaNomes2.Items.Add(new ListItem("", ""));
+				//ListaNomes2.Items.Add(new ListItem(" "," "));
+				//ListaNomes2.Items.Add(new ListItem("", ""));
+				//ListaNomes2.Items.Add(new ListItem(" ", " "));
+			}
 
 		}
 
@@ -48,6 +58,9 @@ namespace ExerciciosASPNET
 			ListaNomes2.Items.Clear();
 			LabelMensagem2.Text = "Removidos todos!";
 		}
+
+		// Identidade = É o proprio o objeto
+		// Igualdade = Dois objetos separados, distintos porém iguais.
 
 
 	}

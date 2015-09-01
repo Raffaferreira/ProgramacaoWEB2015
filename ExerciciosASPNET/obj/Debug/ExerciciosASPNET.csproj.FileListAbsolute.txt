@@ -4,3 +4,9 @@ c:\users\aluno\documents\visual studio 2013\Projects\ExerciciosASPNET\bin\Exerci
 c:\users\aluno\documents\visual studio 2013\Projects\ExerciciosASPNET\obj\Debug\ExerciciosASPNET.dll
 c:\users\aluno\documents\visual studio 2013\Projects\ExerciciosASPNET\obj\Debug\ExerciciosASPNET.pdb
 c:\users\aluno\documents\visual studio 2013\Projects\ExerciciosASPNET\obj\Debug\ExerciciosASPNET.csprojResolveAssemblyReference.cache
+C:\Users\aluno\Downloads\ProgramacaoWEB2015\ExerciciosASPNET\bin\ExerciciosASPNET.dll.config
+C:\Users\aluno\Downloads\ProgramacaoWEB2015\ExerciciosASPNET\bin\ExerciciosASPNET.dll
+C:\Users\aluno\Downloads\ProgramacaoWEB2015\ExerciciosASPNET\bin\ExerciciosASPNET.pdb
+C:\Users\aluno\Downloads\ProgramacaoWEB2015\ExerciciosASPNET\obj\Debug\ExerciciosASPNET.csprojResolveAssemblyReference.cache
+C:\Users\aluno\Downloads\ProgramacaoWEB2015\ExerciciosASPNET\obj\Debug\ExerciciosASPNET.dll
+C:\Users\aluno\Downloads\ProgramacaoWEB2015\ExerciciosASPNET\obj\Debug\ExerciciosASPNET.pdb
