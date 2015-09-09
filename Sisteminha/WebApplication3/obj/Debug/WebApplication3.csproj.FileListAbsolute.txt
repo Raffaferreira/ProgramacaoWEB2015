@@ -1,0 +1,5 @@
+C:\VisualStudio\WebApplication3\bin\WebApplication3.dll.config
+C:\VisualStudio\WebApplication3\bin\WebApplication3.dll
+C:\VisualStudio\WebApplication3\bin\WebApplication3.pdb
+C:\VisualStudio\WebApplication3\obj\Debug\WebApplication3.dll
+C:\VisualStudio\WebApplication3\obj\Debug\WebApplication3.pdb
