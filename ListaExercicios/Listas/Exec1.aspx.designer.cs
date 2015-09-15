@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ListasExercícios {
+namespace Listas {
     
     
     public partial class Exec1 {

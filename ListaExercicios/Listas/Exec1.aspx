@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Exec1.aspx.cs" Inherits="ListasExercícios.Exec1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Exec1.aspx.cs" Inherits="Listas.Exec1" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-	<title>Exercicio 01</title>
+	<title>Lista 01</title>
 	<style type="text/css">
 		#content {
 			margin: 0 auto;
@@ -23,6 +23,7 @@
 	</style>
 </head>
 <body>
+
 	<div id="content">
 		<div class="wrapper">
 			<form id="form1" runat="server">
@@ -39,5 +40,6 @@
 			</form>
 		</div>
 	</div>
+
 </body>
 </html>

@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5798B77F-3DB4-4A21-9FF7-5FF1AB7A6D40}</ProjectGuid>
+    <ProjectGuid>{D6DDDBD3-6A99-4893-A506-52C10564C9C0}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ListasExercícios</RootNamespace>
-    <AssemblyName>ListasExercícios</AssemblyName>
+    <RootNamespace>Listas</RootNamespace>
+    <AssemblyName>Listas</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -66,6 +66,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Exec1.aspx" />
+    <Content Include="Exec2.aspx" />
+    <Content Include="Exec3.aspx" />
+    <Content Include="Exec4.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -76,6 +79,27 @@
     </Compile>
     <Compile Include="Exec1.aspx.designer.cs">
       <DependentUpon>Exec1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exec2.aspx.cs">
+      <DependentUpon>Exec2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exec2.aspx.designer.cs">
+      <DependentUpon>Exec2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exec3.aspx.cs">
+      <DependentUpon>Exec3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exec3.aspx.designer.cs">
+      <DependentUpon>Exec3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exec4.aspx.cs">
+      <DependentUpon>Exec4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exec4.aspx.designer.cs">
+      <DependentUpon>Exec4.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -99,9 +123,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>2999</DevelopmentServerPort>
+          <DevelopmentServerPort>1352</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:2999/</IISUrl>
+          <IISUrl>http://localhost:1352/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

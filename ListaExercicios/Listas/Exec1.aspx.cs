@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace ListasExercícios
+namespace Listas
 {
 	public partial class Exec1 : System.Web.UI.Page
 	{
@@ -28,7 +28,7 @@ namespace ListasExercícios
 				return;
 			}
 
-			float tempo, velocidade;
+			float tempo, velocidade, distancia, litros;
 
 			if (float.TryParse(TextBox1.Text, out tempo) == false)
 			{
@@ -42,11 +42,9 @@ namespace ListasExercícios
 				return;
 			}
 
-			float distancia = Convert.ToInt32(TextBox3.Text);
 			distancia = tempo * velocidade;
 			TextBox3.Text = distancia.ToString();
 
-			float litros = Convert.ToInt32(TextBox4.Text);
 			litros = distancia / 12;
 			TextBox4.Text = litros.ToString();
 
