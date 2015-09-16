@@ -18,6 +18,7 @@ namespace Listas
 		{
 			string valor1 = TextBoxValor.Text;
 			float valorText1;
+			float resultado = 1;
 
 			if (float.TryParse(valor1, out valorText1) == false)
 			{
@@ -33,7 +34,7 @@ namespace Listas
 					valorText1--;
 				}
 			}
-			TextBoxResultado.Text = valorText1.ToString();
+			TextBoxResultado.Text = resultado.ToString();
 			LabelMensagem.Text = "Com sucesso...!!!";
 		}
 		

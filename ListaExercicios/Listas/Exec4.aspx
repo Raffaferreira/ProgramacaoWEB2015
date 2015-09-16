@@ -29,15 +29,17 @@
 		<div class="wrapper">
 			<form id="form1" runat="server">
 				<div class="espacamento">
-					<p>Tempo:</p>
-					<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-					<p>Velocidade:</p>
-					<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-					<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-					<asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
-					<asp:Button ID="ButtonCalcular" runat="server" Text="Calcular" OnClick="ButtonCalcular_Click" />
-					<asp:Label ID="lblMensagemErro" runat="server"></asp:Label>
-				</div>gi
+					Lado A:
+					<asp:TextBox ID="TextA" runat="server"></asp:TextBox>
+					Lado B:
+					<asp:TextBox ID="TextB" runat="server"></asp:TextBox>
+					Lado C:
+					<asp:TextBox ID="TextC" runat="server"></asp:TextBox>
+					Resultado:
+					<asp:TextBox ID="TextResultado" runat="server"></asp:TextBox>
+					<asp:Button ID="ButtonVerificar" runat="server" Text="Verificar" OnClick="ButtonVerificar_Click" />
+					<asp:Label ID="labelMensagem" runat="server"></asp:Label>
+				</div>
 			</form>
 		</div>
 	</div>

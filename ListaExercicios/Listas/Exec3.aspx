@@ -23,7 +23,6 @@
 	</style>
 </head>
 <body>
- 
 	<div id="content">
 		<div class="wrapper">
 			<form id="form1" runat="server">
@@ -38,7 +37,5 @@
 			</form>
 		</div>
 	</div>
-
-
 </body>
 </html>
