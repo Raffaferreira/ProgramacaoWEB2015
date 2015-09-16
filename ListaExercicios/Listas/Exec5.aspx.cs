@@ -9,6 +9,8 @@ namespace Listas
 {
 	public partial class Exec5 : System.Web.UI.Page
 	{
+		public float valorA, valorB, valorC;
+
 		protected void Page_Load(object sender, EventArgs e)
 		{
 
@@ -16,11 +18,9 @@ namespace Listas
 
 		protected void ButtonOrdernar_Click(object sender, EventArgs e)
 		{
-			string ladoA = TextB.Text;
+			string ladoA = TextA.Text;
 			string ladoB = TextB.Text;
 			string ladoC = TextC.Text;
-
-			float valorA, valorB, valorC, maior1, maior2, maior3;
 
 			if (float.TryParse(ladoA, out valorA) == false)
 			{
@@ -38,30 +38,14 @@ namespace Listas
 				return;
 			}
 
-			if (valorA > valorB)
-			{
-				maior1 = valorA;
-				maior2 = valorB;
-			}
-			if (valorB > valorC)
-			{
-				maior1 = valorB;
-				maior2 = valorC;
+			float[] vetor = new float[] { valorA, valorB, valorC };
+			Array.Sort(vetor);
 
-			}
-			if(valorC > valorA)
-			{
-				maior1 = valorC;
-				maior2 = valorA;
-				maior3 = valorB;
+			Valor1.Text = vetor[0].ToString();
+			Valor2.Text = vetor[1].ToString();
+			Valor3.Text = vetor[2].ToString();
 
-				Valor1.Text = maior1.ToString();
-				Valor2.Text = maior2.ToString();
-				Valor3.Text = maior3.ToString();
-				return;
-			}
-
-			labelMensagem.Text = "Ordenados...!";
+			labelMensagem.Text = "ORDENADOS MIZERAVII....";
 		}
 	}
 }
