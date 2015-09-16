@@ -23,10 +23,25 @@
 	</style>
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-    
-    </div>
-    </form>
+	<div id="content">
+		<div class="wrapper">
+			<form id="form1" runat="server">
+				<div class="espacamento">
+					Valor A:
+					<asp:TextBox ID="TextA" runat="server"></asp:TextBox>
+					Valor B:
+					<asp:TextBox ID="TextB" runat="server"></asp:TextBox>
+					Valor C:
+					<asp:TextBox ID="TextC" runat="server"></asp:TextBox>
+					Resultado:
+					<asp:TextBox ID="Valor1" runat="server"></asp:TextBox>
+					<asp:TextBox ID="Valor2" runat="server"></asp:TextBox>
+					<asp:TextBox ID="Valor3" runat="server"></asp:TextBox>
+					<asp:Button ID="ButtonOrdernar" runat="server" Text="Ordenar" OnClick="ButtonOrdernar_Click"/>
+					<asp:Label ID="labelMensagem" runat="server"></asp:Label>
+				</div>
+			</form>
+		</div>
+	</div>
 </body>
 </html>

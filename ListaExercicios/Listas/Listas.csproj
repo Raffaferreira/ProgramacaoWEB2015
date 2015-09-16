@@ -69,6 +69,7 @@
     <Content Include="Exec2.aspx" />
     <Content Include="Exec3.aspx" />
     <Content Include="Exec4.aspx" />
+    <Content Include="Exec5.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -100,6 +101,13 @@
     </Compile>
     <Compile Include="Exec4.aspx.designer.cs">
       <DependentUpon>Exec4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exec5.aspx.cs">
+      <DependentUpon>Exec5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exec5.aspx.designer.cs">
+      <DependentUpon>Exec5.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

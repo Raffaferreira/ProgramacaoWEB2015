@@ -27,7 +27,6 @@ namespace Listas
 			}
 			else
 			{
-				float resultado = 1;
 				while ( valorText1 != 1 )
 				{
 					resultado = resultado * valorText1;
