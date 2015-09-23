@@ -12,7 +12,7 @@ namespace CadastroSimples
 {
 	public partial class Cadastro : System.Web.UI.Page
 	{
-		SqlConnection cnn = new SqlConnection("Server=tcp:eot9dccau4.database.windows.net,1433;Database=testedb;User ID=alunos@eot9dccau4;Password=web2015$;Encrypt=True");
+		SqlConnection cnn = new SqlConnection("Server=tcp:eot9dccau4.database.windows.net,1433;Database=testedb;User ID=alunos@eot9dccau4;Password=web2015$;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;");
 		SqlCommand command;
 		private static int vezes = 0;
 
@@ -74,17 +74,25 @@ namespace CadastroSimples
 			cnn.Open();
 
 			command = new SqlCommand("INSERT INTO tbPessoa (Nome, Endereco, Email, Nascimento, Peso) VALUES (@a, @b, @c, @d, @e)", cnn);
-			command.Parameters.Add(new SqlParameter("@a", SqlDbType.VarChar));
-			command.Parameters.Add(new SqlParameter("@b", SqlDbType.VarChar));
-			command.Parameters.Add(new SqlParameter("@c", SqlDbType.VarChar));
-			command.Parameters.Add(new SqlParameter("@d", SqlDbType.Date));
-			command.Parameters.Add(new SqlParameter("@e", SqlDbType.Float));
+			
+			//command.Parameters.Add(new SqlParameter("@a", SqlDbType.VarChar));
+			//command.Parameters.Add(new SqlParameter("@b", SqlDbType.VarChar));
+			//command.Parameters.Add(new SqlParameter("@c", SqlDbType.VarChar));
+			//command.Parameters.Add(new SqlParameter("@d", SqlDbType.Date));
+			//command.Parameters.Add(new SqlParameter("@e", SqlDbType.Float));
 
-			command.Parameters[0].Value = nome;
-			command.Parameters[1].Value = endereco;
-			command.Parameters[2].Value = email;
-			command.Parameters[3].Value = nascimentoData;
-			command.Parameters[4].Value = pesoDouble;
+			//command.Parameters[0].Value = nome;
+			//command.Parameters[1].Value = endereco;
+			//command.Parameters[2].Value = email;
+			//command.Parameters[3].Value = nascimentoData;
+			//command.Parameters[4].Value = pesoDouble;
+
+			command.Parameters.AddWithValue("@a", nome);
+			command.Parameters.AddWithValue("@b", endereco);
+			command.Parameters.AddWithValue("@c", email);
+			command.Parameters.AddWithValue("@d", nascimentoData);
+			command.Parameters.AddWithValue("@e", pesoDouble);
+
 			command.ExecuteNonQuery();
 			command.Dispose();
 
