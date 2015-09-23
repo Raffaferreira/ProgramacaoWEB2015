@@ -14,14 +14,15 @@ namespace CadastroSimples
 	{
 		SqlConnection cnn = new SqlConnection("Server=tcp:eot9dccau4.database.windows.net,1433;Database=testedb;User ID=alunos@eot9dccau4;Password=web2015$;Encrypt=True");
 		SqlCommand command;
+		private static int vezes = 0;
 
 		protected void Page_Load(object sender, EventArgs e)
 		{
 			if (Page.IsPostBack == false)
 			{
-
+				vezes++;
 			}
-
+			labelMensagem.Text = "Você está carregando a página pela " + vezes + " vez";	
 		}
 
 		protected void Cadastrar_Click(object sender, EventArgs e)
@@ -90,7 +91,7 @@ namespace CadastroSimples
 			cnn.Close();
 			cnn.Dispose();
 
-			labelMensagem.Text = "CADASTRADO COM SUCESSO";
+			labelMensagem.Text = "CADASTRADO COM SUCESSO !!!";
 		}
 	}
 }

@@ -48,7 +48,7 @@
 					<asp:Button runat="server" ID="Cadastrar" Text="Cadastrar" OnClick="Cadastrar_Click" />
 				</p>
 			</div>
-			<asp:Label runat="server" ID="labelMensagem"></asp:Label>
+			<asp:Label runat="server" ID="labelMensagem" ViewStateMode="Enabled"></asp:Label>
 		</div>
 	</form>
 
