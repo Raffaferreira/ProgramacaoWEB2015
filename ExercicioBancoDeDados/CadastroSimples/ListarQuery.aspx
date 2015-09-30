@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Cadastro.aspx.cs" Inherits="CadastroSimples.Cadastro" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListarQuery.aspx.cs" Inherits="CadastroSimples.Atualizar" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-	<title>Cadastro</title>
 
+	<title>Registro Via Query</title>
 	<style type="text/css">
 		body {
 			margin: 5px;
@@ -30,9 +30,9 @@
 
 </head>
 <body>
-	<form id="form1" runat="server">
+
+	<form id="form2" runat="server">
 		<div class="cadaster-content">
-			<h1 style="text-align: center;">HOME - CADASTRAR USUÁRIO</h1>
 			<div class="wrapper-content">
 				<p>Nome: </p>
 				<asp:TextBox runat="server" ID="TxtNome"></asp:TextBox>
@@ -44,12 +44,8 @@
 				<asp:TextBox runat="server" ID="TxtNascimento"></asp:TextBox>
 				<p>Peso: </p>
 				<asp:TextBox runat="server" ID="TxtPeso"></asp:TextBox>
-				<p>
-					<asp:Button runat="server" ID="Cadastrar" Text="Cadastrar" OnClick="Cadastrar_Click" />
-					<asp:Button runat="server" ID="Atualizar" Text="Atualizar" OnClick="Atualizar_Click" />
-				</p>
 			</div>
-			<asp:Label runat="server" ID="labelMensagem" ViewStateMode="Enabled"></asp:Label>
+			<asp:Label runat="server" ID="lblMensagem" ViewStateMode="Enabled"></asp:Label>
 		</div>
 	</form>
 

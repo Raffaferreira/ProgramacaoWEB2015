@@ -65,11 +65,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ListarQuery.aspx" />
     <Content Include="Cadastro.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ListarQuery.aspx.cs">
+      <DependentUpon>ListarQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListarQuery.aspx.designer.cs">
+      <DependentUpon>ListarQuery.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Cadastro.aspx.cs">
       <DependentUpon>Cadastro.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

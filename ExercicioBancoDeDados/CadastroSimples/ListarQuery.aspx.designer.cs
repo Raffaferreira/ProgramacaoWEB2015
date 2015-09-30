@@ -10,16 +10,16 @@
 namespace CadastroSimples {
     
     
-    public partial class Cadastro {
+    public partial class Atualizar {
         
         /// <summary>
-        /// form1 control.
+        /// form2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form2;
         
         /// <summary>
         /// TxtNome control.
@@ -67,30 +67,12 @@ namespace CadastroSimples {
         protected global::System.Web.UI.WebControls.TextBox TxtPeso;
         
         /// <summary>
-        /// Cadastrar control.
+        /// lblMensagem control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Cadastrar;
-        
-        /// <summary>
-        /// Atualizar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Atualizar;
-        
-        /// <summary>
-        /// labelMensagem control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labelMensagem;
+        protected global::System.Web.UI.WebControls.Label lblMensagem;
     }
 }
