@@ -30,7 +30,9 @@ namespace ExerciciosASPNET
 				return;
 			}
 
-			ListaNomes2.Items.Add(string.Format("", txtNome.Text, txtValor.Text));
+
+			ListItem item1 = new ListItem(nome, valor.ToString());
+			ListaNomes2.Items.Add(item1);
 			LabelMensagem2.Text = "Itens adicionado na lista";
 		}
 
@@ -67,6 +69,7 @@ namespace ExerciciosASPNET
 			}
 
 		}
+
 
 
 	}
