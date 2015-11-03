@@ -46,7 +46,6 @@
 				<asp:TextBox runat="server" ID="TxtPeso"></asp:TextBox>
 				<p>
 					<asp:Button runat="server" ID="Cadastrar" Text="Cadastrar" OnClick="Cadastrar_Click" />
-					<asp:Button runat="server" ID="Atualizar" Text="Atualizar" OnClick="Atualizar_Click" />
 				</p>
 			</div>
 			<asp:Label runat="server" ID="labelMensagem" ViewStateMode="Enabled"></asp:Label>

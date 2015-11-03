@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CadastroSimples {
+namespace WebApplication1 {
     
     
-    public partial class Cadastro {
+    public partial class WebForm1 {
         
         /// <summary>
         /// form1 control.
@@ -22,66 +22,66 @@ namespace CadastroSimples {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// TxtNome control.
+        /// DropListNomes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNome;
+        protected global::System.Web.UI.WebControls.DropDownList DropListNomes;
         
         /// <summary>
-        /// TxtEndereco control.
+        /// TxtNota1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtEndereco;
+        protected global::System.Web.UI.WebControls.TextBox TxtNota1;
         
         /// <summary>
-        /// TxtEmail control.
+        /// TxtNota2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtEmail;
+        protected global::System.Web.UI.WebControls.TextBox TxtNota2;
         
         /// <summary>
-        /// TxtNascimento control.
+        /// TxtNota3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNascimento;
+        protected global::System.Web.UI.WebControls.TextBox TxtNota3;
         
         /// <summary>
-        /// TxtPeso control.
+        /// TxtNota4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtPeso;
+        protected global::System.Web.UI.WebControls.TextBox TxtNota4;
         
         /// <summary>
-        /// Cadastrar control.
+        /// SubmitNotas control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Cadastrar;
+        protected global::System.Web.UI.WebControls.Button SubmitNotas;
         
         /// <summary>
-        /// labelMensagem control.
+        /// lblMensagem control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labelMensagem;
+        protected global::System.Web.UI.WebControls.Label lblMensagem;
     }
 }

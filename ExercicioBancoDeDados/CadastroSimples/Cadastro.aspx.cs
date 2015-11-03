@@ -103,9 +103,6 @@ namespace CadastroSimples
 			labelMensagem.Text = "CADASTRADO COM SUCESSO !!!";
 		}
 
-		protected void Atualizar_Click(object sender, EventArgs e)
-		{
-			Response.Redirect("Update.aspx");
-		}
+		
 	}
 }

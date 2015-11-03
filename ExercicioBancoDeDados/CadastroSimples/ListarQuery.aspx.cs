@@ -53,12 +53,17 @@ namespace CadastroSimples
                 cmd.Dispose();
                 conn.Close();
                 conn.Dispose();	
-
 			}
 		}
 
         protected void UpdateRegistro_Click(object sender, EventArgs e)
         {
+
+			int id;
+			if (int.TryParse(Request.QueryString["id"], out id) == false)
+			{
+				return;
+			}
             //##################################################################################################
             DateTime data;
             if (DateTime.TryParse(TxtNascimento.Text, out data) == false)
@@ -82,8 +87,7 @@ namespace CadastroSimples
             cmd.Parameters.AddWithValue("@c", TxtEmail.Text);
             cmd.Parameters.AddWithValue("@d", data);
             cmd.Parameters.AddWithValue("@e", peso);
-            cmd.Parameters.AddWithValue("@f", 0); //Esse parâmetro é o Id
-
+            cmd.Parameters.AddWithValue("@f", id); 
             cmd.ExecuteNonQuery();
             cmd.Dispose();
             conn.Close();
@@ -91,14 +95,7 @@ namespace CadastroSimples
 
             lblMensagem.Text = "REGISTROS ATUALIZADOS";
 
-            Response.Redirect("Cadastro.aspx");
-				
         }
-
-
-        
-
-
 
 
 	}
