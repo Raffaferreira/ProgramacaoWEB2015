@@ -13,7 +13,7 @@ namespace CadastroSimples
 	public partial class Atualizar : System.Web.UI.Page
 	{
 		//private static readonly string webConfigName = ConfigurationManager.AppSettings.Get("AzureBancoDeDados");
-		private static readonly string stringOfConnection = ConfigurationManager.ConnectionStrings["AzureBancoDeDados"].ConnectionString;
+        private static readonly string stringOfConnection = ConfigurationManager.ConnectionStrings["BancoLocalWEb"].ConnectionString;
 		private static SqlConnection conn = new SqlConnection(stringOfConnection);
 		SqlCommand cmd;
 		SqlDataReader reader;
@@ -47,46 +47,56 @@ namespace CadastroSimples
 				{
 					lblMensagem.Text = "Id inválido seu burro, usuário anta, aprende a usar isso seu animal!";
 				}
+
 				reader.Close();
 				reader.Dispose();
-				cmd.Dispose();
+                cmd.Dispose();
+                conn.Close();
+                conn.Dispose();	
 
-
-				//##################################################################################################
-				DateTime data;
-				if (DateTime.TryParse(TxtNascimento.Text, out data) == false)
-				{
-					lblMensagem.Text = "Campo de data vazia !";
-					return;
-				}
-
-				double peso;
-				if (double.TryParse(TxtPeso.Text, out peso) == false)
-				{
-					lblMensagem.Text = "Campo de peso vazio!";
-					return;
-				}
-
-				cmd = new SqlCommand("UPDATE tbPessoa SET Nome=@a, Endereco=@b, Email=@c, Nascimento=@d, Peso=@e WHERE Id=@f", conn);
-				cmd.Parameters.AddWithValue("@a", TxtNome.Text);
-				cmd.Parameters.AddWithValue("@b", TxtEndereco.Text);
-				cmd.Parameters.AddWithValue("@c", TxtEmail.Text);
-				cmd.Parameters.AddWithValue("@d", data);
-				cmd.Parameters.AddWithValue("@e", peso);
-				cmd.Parameters.AddWithValue("@f", id); //Esse parâmetro é o Id
-
-				cmd.ExecuteNonQuery();
-				cmd.Dispose();
-				conn.Close();
-				conn.Dispose();
-
-				lblMensagem.Text = "REGISTROS ATUALIZADOS";
-
-				Response.Redirect("Cadastro.aspx");
-				
-				
 			}
 		}
+
+        protected void UpdateRegistro_Click(object sender, EventArgs e)
+        {
+            //##################################################################################################
+            DateTime data;
+            if (DateTime.TryParse(TxtNascimento.Text, out data) == false)
+            {
+                lblMensagem.Text = "Campo de data vazia !";
+                return;
+            }
+
+            double peso;
+            if (double.TryParse(TxtPeso.Text, out peso) == false)
+            {
+                lblMensagem.Text = "Campo de peso vazio!";
+                return;
+            }
+
+            SqlConnection conn = new SqlConnection(stringOfConnection);
+            conn.Open();
+            cmd = new SqlCommand("UPDATE tbPessoa SET Nome=@a, Endereco=@b, Email=@c, Nascimento=@d, Peso=@e WHERE Id=@f", conn);
+            cmd.Parameters.AddWithValue("@a", TxtNome.Text);
+            cmd.Parameters.AddWithValue("@b", TxtEndereco.Text);
+            cmd.Parameters.AddWithValue("@c", TxtEmail.Text);
+            cmd.Parameters.AddWithValue("@d", data);
+            cmd.Parameters.AddWithValue("@e", peso);
+            cmd.Parameters.AddWithValue("@f", 0); //Esse parâmetro é o Id
+
+            cmd.ExecuteNonQuery();
+            cmd.Dispose();
+            conn.Close();
+            conn.Dispose();
+
+            lblMensagem.Text = "REGISTROS ATUALIZADOS";
+
+            Response.Redirect("Cadastro.aspx");
+				
+        }
+
+
+        
 
 
 

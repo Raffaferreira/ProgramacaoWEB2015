@@ -6,13 +6,15 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
-
+using System.Configuration;
 
 namespace CadastroSimples
 {
 	public partial class Cadastro : System.Web.UI.Page
 	{
-		SqlConnection cnn = new SqlConnection("Server=tcp:eot9dccau4.database.windows.net,1433;Database=testedb;User ID=alunos@eot9dccau4;Password=web2015$;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;");
+
+        private static readonly string stringOfConnection = ConfigurationManager.ConnectionStrings["BancoLocalWEb"].ConnectionString;
+        private static SqlConnection conn = new SqlConnection(stringOfConnection);
 		SqlCommand command;
 		private static int vezes = 0;
 
@@ -71,10 +73,9 @@ namespace CadastroSimples
 			}
 			labelMensagem.Text = "";
 
-			cnn.Open();
-
-			command = new SqlCommand("INSERT INTO tbPessoa (Nome, Endereco, Email, Nascimento, Peso) VALUES (@a, @b, @c, @d, @e)", cnn);
-			
+            SqlConnection conn = new SqlConnection(stringOfConnection);
+			conn.Open();
+			command = new SqlCommand("INSERT INTO tbPessoa (Nome, Endereco, Email, Nascimento, Peso) VALUES (@a, @b, @c, @d, @e)", conn);
 			//command.Parameters.Add(new SqlParameter("@a", SqlDbType.VarChar));
 			//command.Parameters.Add(new SqlParameter("@b", SqlDbType.VarChar));
 			//command.Parameters.Add(new SqlParameter("@c", SqlDbType.VarChar));
@@ -96,8 +97,8 @@ namespace CadastroSimples
 			command.ExecuteNonQuery();
 			command.Dispose();
 
-			cnn.Close();
-			cnn.Dispose();
+			conn.Close();
+			conn.Dispose();
 
 			labelMensagem.Text = "CADASTRADO COM SUCESSO !!!";
 		}
