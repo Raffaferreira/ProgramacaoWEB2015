@@ -39,7 +39,6 @@
 				<div id="lblmensagem">
 					<asp:Label ID="LabelMensagem" runat="server" CssClass="LabelMsg"></asp:Label>
 				</div>
-
 			</div>
 		</form>
 	</div>
